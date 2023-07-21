@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "Hanken Grotesk";
+    src: url("/src/assets/fonts/HankenGrotesk-VariableFont_wght.ttf"),
+         url("/src/assets/fonts/HankenGrotesk-Medium.ttf"),
+         url("/src/assets/fonts/HankenGrotesk-Bold.ttf"),
+         url("/src/assets/fonts/HankenGrotesk-ExtraBold.ttf");
+}
+
+@mixin centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+* {
+    box-sizing: border-box;
+
+    padding: 0;
+    margin: 0;
+
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+p {
+    font-size: 18px;
+}

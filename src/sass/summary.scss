@@ -1,0 +1,92 @@
+.summary {
+    @include centered;
+    flex-direction: column;
+
+    gap: 1rem;
+    width: 350px;
+
+    h2 {
+        align-self: flex-start;
+        padding: 1.75rem 2rem 0 2rem;
+    }
+
+    p {
+        font-weight: 700;
+    }
+
+    &__category {
+
+        display: flex;
+        justify-content: space-between;
+
+        padding: 1rem;
+        width: 300px;
+        border-radius: .5rem;
+
+        &.reaction-bg {
+            background-color: hsla(0, 100%, 67%, 0.05);
+
+            & .summary__reaction .highlight {
+                color: hsl(0, 100%, 67%);
+            }
+
+        }
+        
+        &.memory-bg {
+            background-color: hsla(39, 100%, 56%, 0.05);
+
+            & .summary__memory .highlight {
+                color: hsl(39, 100%, 56%);
+            }
+        }
+
+        &.verbal-bg {
+            background-color: hsla(166, 100%, 37%, 0.05);
+
+            & .summary__verbal .highlight {
+                color: hsl(166, 100%, 37%);
+            }
+        }
+
+        &.visual-bg {
+            background-color: hsla(234, 85%, 45%, 0.05);
+
+            & .summary__visual .highlight {
+                color: hsl(234, 85%, 45%);
+            }
+        }
+
+        .summary__reaction,
+        .summary__memory,
+        .summary__verbal,
+        .summary__visual {
+            display: flex;
+            gap: 1rem;           
+        }
+
+        .faded {
+            color: rgba(128, 128, 128, 0.75);
+        }
+    }
+
+    .btn {
+        padding: 2.5% 1rem 2rem 1rem;   
+    }
+
+    &__continue {
+        background-color: hsl(224, 30%, 27%);
+        border: none;
+        border-radius: 99rem;
+        padding: 1rem 7.15rem;
+
+        color: #FFF;
+        font-size: 1.1rem;    
+
+        &:hover {
+            background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+            
+            cursor: pointer;
+        }
+
+    }
+}
